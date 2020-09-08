@@ -1,0 +1,499 @@
+/* The navigation bar */
+ul.nav li a, ul.nav li a:visited {
+      color: #254c5f;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #4f8a8b;
+}
+
+ul.nav li.active a {
+    color: #4f8a8b;
+}
+.navbar {
+    min-height: 80px;
+}
+
+ul.nav li a{
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "proxima nova";
+  margin-top: 30px;
+  color: #254c5f;
+}
+
+.carousel-caption {
+  text-align: center;
+}
+
+.line {
+  height: 5px;
+  color: white;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.explore {
+  font-family: 'Vesterbro';
+  font-size: 40px;
+  color: #204051;
+
+}
+
+.lead {
+  text-align: left;
+}
+
+.card {
+  margin-left: 3%;
+  margin-right: 3%;
+  border-width: 0px;
+  margin-top: 50px;
+}
+.more {
+  font-family: 'Alata', sans-serif;
+  font-size: 30px;
+  color: #3f4441;
+}
+ h4 {
+   font-family: 'Vesterbro';
+   font-size: 40px;
+   color: #204051;
+   margin-top: 100px;
+ }
+
+
+.hovereffect {
+  size: 30%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 2;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 1em 1em 1em;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  text-align: center;
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-group {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer social icons */
+.footer1 {
+
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin: auto;
+  width: 100%;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 10px;
+  width: 100%;
+
+}
+
+.footer-bottom{
+ font-size: 13px;
+ text-align: center;
+ margin-bottom: 0px;
+ font-weight: 100;
+ font-family: "proxima nova";
+ color: #6e6d6d;
+ }
+
+
+
+.bottom{
+  background-color: #eeeeee;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.row-full{
+ width: 100%;
+ align-content: center;
+ height: 100px;
+ margin-top: 100px;
+
+}
+
+
+@media screen and (min-width: 375px) {
+  .footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+}
+
+.footer1 ul.social-network span.green :hover{
+  color: #cdb30c;
+}
+
+.footer1 ul.social-network span.red :hover{
+  color: #fa26a0;
+}
+
+.footer1 ul.social-network span.blue :hover{
+  color: #01a9b4;
+}
+
+.footer1 ul.social-network span.darkblue :hover{
+  color: #005086;
+  opacity: 2;
+}
+
+.card-deck {
+  margin-bottom: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+
+.description p{
+  font-family: "proxima nova";
+  font-size: 13px;
+  margin-top: 50px;
+  color: #838383;
+  line-height: 25px;
+}
+
+.container-fluid p{
+  font-family: "proxima nova";
+  font-size: 13px;
+  margin-top: 50px;
+  color: #838383;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.container-fluid h1{
+  font-family: "proxima nova";
+  font-size: 14px;
+  margin-top: 30px;
+  color: #254c5f;
+  line-height: 25px;
+  margin-bottom: 60px;
+
+}
+
+#rig {
+    max-width: none;
+    margin-left: 20px;
+    margin-right: 20px;/*center aligned*/
+    padding:0px;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style: none;
+    background-color: white;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:10px;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: black url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.5;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: "proxima nova";
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:100%;
+    }
+}
+.card{
+  margin: 0px 0px 0px 0px;
+
+}
+.parallax .card-img-overlay h4{
+  color: white;
+  font-size: 50px;
+  margin-left: 350px;
+}
+
+.parallax .card-img-overlay p{
+  color: white;
+  font-family: "proxima nova";
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 350px;
+}
+
+.parallax .card-img-overlay{
+  margin-top: 150px;
+
+}
+
+.parallax .card-img-overlay  p{
+  font-size: 13px;
+  font-family: "proxima nova";
+  color: #e0ece4;
+  font-weight: bold;
+}
+
+.card-body {
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+.card-body .card-text{
+  font-family: "proxima nova";
+  font-size: 13px;
+  color: #838383;
+}
+
+.card-body .postcontent{
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 170px;
+  margin-right: 170px;
+
+}
+
+.postcontent h2{
+  margin-top: 50px;
+  color: #3797a4;
+  font-family: "Vesterbro";
+}
+
+#subheading{
+  color: #91b029;
+  font-family: "proxima nova";
+  font-weight: bold;
+  size: 25px;
+  margin-bottom: 0px;
+}
+ #place {
+   color: #3f4441;
+   size:25px;
+   font-weight: bold;;
+   margin-top: 5px;
+   margin-bottom: 30px;
+ }
+
+.postcontent p{
+  font-family: "proxima nova";
+  font-size: 14px;
+  color: #6e6d6d;
+}
